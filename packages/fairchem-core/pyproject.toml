@@ -2,6 +2,9 @@
 requires = ["hatchling", "hatch-vcs", "hatch-fancy-pypi-readme>=24"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.hooks.custom]
+path = "hatch_build/__init__.py"
+
 [project]
 name = "fairchem-core"
 description = "Machine learning models for chemistry and materials science by the FAIR Chemistry team"
