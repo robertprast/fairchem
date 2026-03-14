@@ -1,7 +1,6 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-path = "hatch_build/__init__.py"
+requires = ["hatchling", "hatch-vcs", "hatch-fancy-pypi-readme>=24"]
+build-backend = "hatchling.build"
 
 [project]
 name = "fairchem-core"
