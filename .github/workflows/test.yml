@@ -27,7 +27,7 @@ env:
 
 jobs:
   test:
-    runs-on: 32-core-ubuntu
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       # Needed to manually set commit status
@@ -129,7 +129,7 @@ jobs:
           status-context: '${{ github.job }} (${{ matrix.python_version }})'
 
   test_gpu:
-    runs-on: 4-core-ubuntu-gpu-t4
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       # Needed to manually set commit status
@@ -183,7 +183,7 @@ jobs:
           status-context: '${{ github.job }} (${{ matrix.python_version }})'
 
   test_lammps_gpu:
-    runs-on: 4-core-ubuntu-gpu-t4
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       # Needed to manually set commit status
