@@ -1,8 +1,6 @@
 [build-system]
-requires = ["hatchling", "hatch-vcs", "hatch-fancy-pypi-readme>=24"]
-build-backend = "hatchling.build"
-
-[tool.hatch.build.hooks.custom]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
 path = "hatch_build/__init__.py"
 
 [project]
